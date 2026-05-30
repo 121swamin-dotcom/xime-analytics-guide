@@ -269,7 +269,7 @@ main {
   border: 1px solid var(--gray-100); padding: 16px;
   overflow-x: auto; box-shadow: var(--shadow-sm);
 }
-.graph-wrap svg { min-width: 700px; }
+.graph-wrap svg { min-width: 760px; }
 
 /* ── INFO BOX ── */
 .info-box {
@@ -415,7 +415,11 @@ main {
   .course-grid { grid-template-columns: 1fr; }
   .role-grid { grid-template-columns: 1fr; }
   .page-header h2 { font-size: 1.5rem; }
-  .modal { max-height: 92vh; }
+  /* Modal: full-width on mobile */
+  .modal { width: 96vw; max-width: 96vw; max-height: 92vh; padding: 20px 16px; }
+  .modal-header { padding: 0 0 12px; }
+  /* Contact buttons: comfortable tap target */
+  .contact-btn { min-height: 44px; }
   .overlay-close { position: fixed; inset: 0; z-index: 49; display: none; background: rgba(0,0,0,0.3); }
   .overlay-close.visible { display: block; }
 }
@@ -423,6 +427,8 @@ main {
   header { padding: 0 14px; }
   .header-title h1 { font-size: 1rem; }
   .header-title p { display: none; }
+  .page-header h2 { font-size: 1.3rem; }
+  main { padding: 16px 12px; }
 }
 
   /* ── Navigation & Contact box improvements ── */
