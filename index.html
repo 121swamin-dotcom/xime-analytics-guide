@@ -555,8 +555,7 @@ main {
     <p>Arrows show prerequisite relationships. Click any node to view course details.</p>
   </div>
   <div class="graph-wrap">
-    <svg viewBox="0 0 1069 624" xmlns="http://www.w3.org/2000/svg" font-family="Arial,sans-serif" style="">
-  
+    <svg viewBox="0 0 1069 624" xmlns="http://www.w3.org/2000/svg" font-family="Arial,sans-serif">
   <style>
     .course-node { cursor: pointer; }
     .course-node rect { transition: opacity 0.15s, filter 0.15s; }
@@ -613,19 +612,30 @@ main {
   <path d="M798 245 L920 320" fill="none" stroke="#2a5a9f" stroke-width="2.5" opacity="0.8" marker-end="url(#arrM)" style="fill:none;stroke:rgb(42, 90, 159);color:rgb(0, 0, 0);stroke-width:2.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.8;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
 
   <!-- T5 → T6 mandatory -->
-  <path d="M220 380 L342 455" fill="none" stroke="#2a5a9f" stroke-width="2.5" opacity="0.8" marker-end="url(#arrM)" style="fill:none;stroke:rgb(42, 90, 159);color:rgb(0, 0, 0);stroke-width:2.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.8;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <path d="M220 380 L494 455" fill="none" stroke="#2a5a9f" stroke-width="2.5" opacity="0.8" marker-end="url(#arrM)" style="fill:none;stroke:rgb(42, 90, 159);color:rgb(0, 0, 0);stroke-width:2.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.8;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- AAML(220) → ABDA(220) -->
+  <path d="M220 380 L220 455" fill="none" stroke="#2a5a9f" stroke-width="2.5" opacity="0.8" marker-end="url(#arrM)"/>
+  <!-- AAML(220) → GESB(360) -->
+  <path d="M220 380 L360 455" fill="none" stroke="#2a5a9f" stroke-width="2.5" opacity="0.8" marker-end="url(#arrM)"/>
+  <!-- AAML(220) → PRBA(500) -->
+  <path d="M220 380 L500 455" fill="none" stroke="#2a5a9f" stroke-width="2.5" opacity="0.8" marker-end="url(#arrM)"/>
 
   <!-- ═══ RECOMMENDED ARROWS (dotted, lighter) ═══ -->
 
   <!-- T4 → T5 recommended -->
-  <path d="M494 245 L640 320" fill="none" stroke="#8aaacf" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.85" marker-end="url(#arrR)" style="fill:none;stroke:rgb(138, 170, 207);color:rgb(0, 0, 0);stroke-width:1.8px;stroke-dasharray:6px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <path d="M342 245 L500 320" fill="none" stroke="#8aaacf" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.85" marker-end="url(#arrR)" style="fill:none;stroke:rgb(138, 170, 207);color:rgb(0, 0, 0);stroke-width:1.8px;stroke-dasharray:6px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- BUFO(494) → SIAM(640) -->
+  <path d="M494 245 L640 320" fill="none" stroke="#8aaacf" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.85" marker-end="url(#arrR)"/>
+  <!-- BANA(342) → VAAS(500) -->
+  <path d="M342 245 L500 320" fill="none" stroke="#8aaacf" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.85" marker-end="url(#arrR)"/>
 
   <!-- T5 → T6 recommended -->
-  <path d="M920 380 L646 455" fill="none" stroke="#8aaacf" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.85" marker-end="url(#arrR)" style="fill:none;stroke:rgb(138, 170, 207);color:rgb(0, 0, 0);stroke-width:1.8px;stroke-dasharray:6px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <path d="M500 380 L646 455" fill="none" stroke="#8aaacf" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.85" marker-end="url(#arrR)" style="fill:none;stroke:rgb(138, 170, 207);color:rgb(0, 0, 0);stroke-width:1.8px;stroke-dasharray:6px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <path d="M780 380 L798 455" fill="none" stroke="#8aaacf" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.85" marker-end="url(#arrR)" style="fill:none;stroke:rgb(138, 170, 207);color:rgb(0, 0, 0);stroke-width:1.8px;stroke-dasharray:6px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- APRD(920) → DSTR(780) -->
+  <path d="M920 380 L780 455" fill="none" stroke="#8aaacf" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.85" marker-end="url(#arrR)"/>
+  <!-- VAAS(500) → DSTR(780) -->
+  <path d="M500 380 L780 455" fill="none" stroke="#8aaacf" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.85" marker-end="url(#arrR)"/>
+  <!-- CISB(780) → TGRC(920) -->
+  <path d="M780 380 L920 455" fill="none" stroke="#8aaacf" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.85" marker-end="url(#arrR)"/>
+  <!-- SIAM(640) → AMVA(640) -->
+  <path d="M640 380 L640 455" fill="none" stroke="#8aaacf" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.85" marker-end="url(#arrR)"/>
 
   <!-- ═══ NODES ═══ -->
 
@@ -704,29 +714,41 @@ main {
   <text x="920" y="362" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#a0203e" style="fill:rgb(160, 32, 62);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:central">Agile Product Dev</text>
   </g>
 
-  <!-- T6 — re-spaced with 40px gaps (same as T4) and centred at 570 -->
+  <!-- T6 — 6 nodes, centres at 220,360,500,640,780,920 (stride 140) -->
   <g class="course-node" onclick="openCourseModal('ABDA')" aria-label="Open ABDA course details">
-  <rect x="286" y="455" width="112" height="60" rx="8" fill="#fef0cc" stroke="#c07800" stroke-width="2" style="fill:rgb(254, 240, 204);stroke:rgb(192, 120, 0);color:rgb(0, 0, 0);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="342" y="475" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#7a4a00" style="fill:rgb(122, 74, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:14px;font-weight:700;text-anchor:middle;dominant-baseline:central">ABDA</text>
-  <text x="342" y="497" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#9a6200" style="fill:rgb(154, 98, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:central">Applied Big Data Anal.</text>
+  <rect x="164" y="455" width="112" height="60" rx="8" fill="#fef0cc" stroke="#c07800" stroke-width="2"/>
+  <text x="220" y="475" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#7a4a00">ABDA</text>
+  <text x="220" y="497" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#9a6200">Applied Big Data Anal.</text>
   </g>
 
   <g class="course-node" onclick="openCourseModal('GESB')" aria-label="Open GESB course details">
-  <rect x="438" y="455" width="112" height="60" rx="8" fill="#fef0cc" stroke="#c07800" stroke-width="2" style="fill:rgb(254, 240, 204);stroke:rgb(192, 120, 0);color:rgb(0, 0, 0);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="494" y="475" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#7a4a00" style="fill:rgb(122, 74, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:14px;font-weight:700;text-anchor:middle;dominant-baseline:central">GESB</text>
-  <text x="494" y="497" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#9a6200" style="fill:rgb(154, 98, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:central">GenAI &amp; Enterprise AI</text>
+  <rect x="304" y="455" width="112" height="60" rx="8" fill="#fef0cc" stroke="#c07800" stroke-width="2"/>
+  <text x="360" y="475" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#7a4a00">GESB</text>
+  <text x="360" y="497" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#9a6200">GenAI &amp; Enterprise AI</text>
+  </g>
+
+  <g class="course-node" onclick="openCourseModal('PRBA')" aria-label="Open PRBA course details">
+  <rect x="444" y="455" width="112" height="60" rx="8" fill="#fef0cc" stroke="#c07800" stroke-width="2"/>
+  <text x="500" y="475" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#7a4a00">PRBA</text>
+  <text x="500" y="497" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#9a6200">Prescriptive Analytics</text>
+  </g>
+
+  <g class="course-node" onclick="openCourseModal('AMVA')" aria-label="Open AMVA course details">
+  <rect x="584" y="455" width="112" height="60" rx="8" fill="#fef0cc" stroke="#c07800" stroke-width="2"/>
+  <text x="640" y="475" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#7a4a00">AMVA</text>
+  <text x="640" y="497" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#9a6200">Applied Multivariate A.</text>
   </g>
 
   <g class="course-node" onclick="openCourseModal('DSTR')" aria-label="Open DSTR course details">
-  <rect x="590" y="455" width="112" height="60" rx="8" fill="#fef0cc" stroke="#c07800" stroke-width="2" style="fill:rgb(254, 240, 204);stroke:rgb(192, 120, 0);color:rgb(0, 0, 0);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="646" y="475" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#7a4a00" style="fill:rgb(122, 74, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:14px;font-weight:700;text-anchor:middle;dominant-baseline:central">DSTR</text>
-  <text x="646" y="497" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#9a6200" style="fill:rgb(154, 98, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:central">Digital Strategy &amp; Tx</text>
+  <rect x="724" y="455" width="112" height="60" rx="8" fill="#fef0cc" stroke="#c07800" stroke-width="2"/>
+  <text x="780" y="475" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#7a4a00">DSTR</text>
+  <text x="780" y="497" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#9a6200">Digital Strategy &amp; Tx</text>
   </g>
 
   <g class="course-node" onclick="openCourseModal('TGRC')" aria-label="Open TGRC course details">
-  <rect x="742" y="455" width="112" height="60" rx="8" fill="#fef0cc" stroke="#c07800" stroke-width="2" style="fill:rgb(254, 240, 204);stroke:rgb(192, 120, 0);color:rgb(0, 0, 0);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-  <text x="798" y="475" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#7a4a00" style="fill:rgb(122, 74, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:14px;font-weight:700;text-anchor:middle;dominant-baseline:central">TGRC</text>
-  <text x="798" y="497" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#9a6200" style="fill:rgb(154, 98, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:central">Tech Gov &amp; Risk</text>
+  <rect x="864" y="455" width="112" height="60" rx="8" fill="#fef0cc" stroke="#c07800" stroke-width="2"/>
+  <text x="920" y="475" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="700" fill="#7a4a00">TGRC</text>
+  <text x="920" y="497" text-anchor="middle" dominant-baseline="central" font-size="9" fill="#9a6200">Tech Gov &amp; Risk</text>
   </g>
 
   <!-- ═══ LEGEND ═══ -->
@@ -789,12 +811,12 @@ main {
           <th class="left" rowspan="2" style="width:180px">Role Category</th>
           <th colspan="4" class="term-t4">Term 4</th>
           <th colspan="6" class="term-t5">Term 5</th>
-          <th colspan="4" class="term-t6" style="background:#8B5000">Term 6</th>
+          <th colspan="6" class="term-t6" style="background:#8B5000">Term 6</th>
         </tr>
         <tr>
           <th class="term-t4">BANA</th><th class="term-t4">BUFO</th><th class="term-t4">DMBI</th><th class="term-t4">DPMG</th>
           <th class="term-t5">AAML</th><th class="term-t5">SIAM</th><th class="term-t5">CISB</th><th class="term-t5">APRD</th><th class="term-t5">DPIN</th><th class="term-t5">VAAS</th>
-          <th style="background:#8B5000">GESB</th><th style="background:#8B5000">DSTR</th><th style="background:#8B5000">TGRC</th><th style="background:#8B5000">ABDA</th>
+          <th style="background:#8B5000">GESB</th><th style="background:#8B5000">DSTR</th><th style="background:#8B5000">TGRC</th><th style="background:#8B5000">ABDA</th><th style="background:#8B5000">PRBA</th><th style="background:#8B5000">AMVA</th>
         </tr>
       </thead>
       <tbody id="pathway-body"></tbody>
@@ -857,10 +879,12 @@ const courses = {
   GESB:{name:"Gen AI & Enterprise AI Strategy for Business",term:"T6",design:"Advanced course on deploying generative AI at enterprise scale. Covers LLM fundamentals, RAG system design, agentic AI, AI governance, and enterprise adoption. Students build a GenAI prototype and develop an AI adoption roadmap.",outcomes:["Design and implement domain-specific GenAI workflows","Build RAG pipelines grounded in company documents","Configure and test no-code/low-code AI agents","Audit GenAI outputs for accuracy and bias","Apply responsible GenAI practices (DPDP Act, PII handling)","Deliver a domain GenAI project prototype and board-ready adoption roadmap"],ttfs:["TTF22","TTF11","TTF18"]},
   DSTR:{name:"Digital Strategy & Transformation",term:"T6",design:"Teaches students to formulate and execute digital strategy at enterprise level: digital maturity assessment, IT-business alignment, platform business models, COBIT/ITIL governance, and Indian industry transformation case studies.",outcomes:["Evaluate IT investment strategy using portfolio management frameworks","Assess digital maturity using BCG/McKinsey frameworks","Evaluate digital business models and platform disruption","Design digital transformation roadmaps using maturity frameworks","Apply COBIT and ITIL governance frameworks to IT strategy","Deliver a consulting-quality digital strategy roadmap"],ttfs:["TTF12","TTF07"]},
   ABDA:{name:"Applied Big Data Analytics for Business",term:"T6",design:"Equips students with conceptual and applied skills for large-scale data systems. Covers distributed computing, PySpark for batch processing, cloud-native SQL analytics, and big data pipeline design.",outcomes:["Explain distributed computing concepts and the MapReduce paradigm","Write PySpark transformations for large-scale batch processing","Execute cloud-native SQL analytics using Google BigQuery","Design a big data pipeline from ingestion to visualisation","Compare cloud architecture patterns: Data Lake, Warehouse, and Lakehouse","Build an end-to-end analytics solution on a large-scale dataset"],ttfs:["TTF01","TTF17","TTF04","TTF05"]},
-  TGRC:{name:"Technology Governance, Risk & Compliance",term:"T6",design:"Managerial focus on risk-informed cybersecurity and technology investment decisions using COBIT, ITIL, NIST CSF 2.0, ISO 27001, and India's DPDP Act.",outcomes:["Apply COBIT/ITIL to assess governance structures","Evaluate IT risks using NIST and FAIR frameworks","Conduct structured IT audit exercises","Apply DPDP Act obligations to organisation evaluation","Evaluate vendor contract governance and TCO modelling","Deliver professional governance and compliance reports"],ttfs:["TTF12","TTF13","TTF14"]}
+  TGRC:{name:"Technology Governance, Risk & Compliance",term:"T6",design:"Managerial focus on risk-informed cybersecurity and technology investment decisions using COBIT, ITIL, NIST CSF 2.0, ISO 27001, and India's DPDP Act.",outcomes:["Apply COBIT/ITIL to assess governance structures","Evaluate IT risks using NIST and FAIR frameworks","Conduct structured IT audit exercises","Apply DPDP Act obligations to organisation evaluation","Evaluate vendor contract governance and TCO modelling","Deliver professional governance and compliance reports"],ttfs:["TTF12","TTF13","TTF14"]},
+  PRBA:{name:"Prescriptive Analytics for Business",term:"T6",design:"Capstone analytics elective completing the predictive-to-prescriptive value chain from BANA and AAML. Covers linear and integer programming, multi-objective optimisation, goal programming, Monte Carlo simulation for stochastic decisions, and the Predict-then-Optimise pipeline. Students deliver an end-to-end prescriptive analytics project using Python.",outcomes:["Apply linear and integer programming to solve resource allocation problems","Formulate and solve multi-objective optimisation and goal programming models","Build Monte Carlo simulations to quantify risk in stochastic business decisions","Implement the Predict-then-Optimise pipeline for data-driven prescriptive solutions","Evaluate optimisation model sensitivity and solution robustness","Deliver an end-to-end prescriptive analytics project with business recommendations"],ttfs:["TTF01","TTF24"]},
+  AMVA:{name:"Applied Multivariate Analytics",term:"T6",design:"Applies multivariate statistical methods — factor analysis, cluster analysis, and structural equation modelling — to real business datasets. Students use jamovi and SmartPLS to move from data preparation through model interpretation to decision-relevant insight. Can be taken in Term 5 or Term 6. Assignment-centric; no exam.",outcomes:["Apply factor analysis to identify latent constructs in business survey data","Execute cluster analysis for customer and market segmentation","Build and interpret structural equation models using SmartPLS","Prepare and validate datasets for multivariate analysis","Interpret multivariate model outputs as decision-relevant business insights","Present multivariate findings with clarity to non-technical stakeholders"],ttfs:["TTF25","TTF26","TTF07"]}
 };
 
-const ttfMap = {TTF01:"Python (Pandas / NumPy / Scikit-learn)",TTF02:"PostgreSQL + pgAdmin",TTF03:"Power BI Desktop",TTF04:"Databricks Community Edition",TTF05:"Google BigQuery",TTF06:"Jira / Trello / PMBOK",TTF07:"Advanced Excel with Analysis ToolPak",TTF08:"SPSS or JMP",TTF09:"AWS / Google Cloud Platform Free Tier",TTF10:"Miro",TTF11:"LangChain / Streamlit",TTF12:"COBIT 2019 / ITIL 4",TTF13:"NIST CSF 2.0 / ISO 27001",TTF14:"FAIR Risk Model",TTF15:"Bizagi Modeler / Disco / ProM",TTF16:"Python: Matplotlib / Seaborn / Plotly",TTF17:"PySpark / Apache Spark",TTF18:"n8n / Zapier",TTF20:"SHAP (Explainable AI)",TTF22:"GenAI Tools (ChatGPT / Copilot / Gemini)",TTF23:"R + RStudio",TTF45:"Tableau Public"};
+const ttfMap = {TTF01:"Python (Pandas / NumPy / Scikit-learn)",TTF02:"PostgreSQL + pgAdmin",TTF03:"Power BI Desktop",TTF04:"Databricks Community Edition",TTF05:"Google BigQuery",TTF06:"Jira / Trello / PMBOK",TTF07:"Advanced Excel with Analysis ToolPak",TTF08:"SPSS or JMP",TTF09:"AWS / Google Cloud Platform Free Tier",TTF10:"Miro",TTF11:"LangChain / Streamlit",TTF12:"COBIT 2019 / ITIL 4",TTF13:"NIST CSF 2.0 / ISO 27001",TTF14:"FAIR Risk Model",TTF15:"Bizagi Modeler / Disco / ProM",TTF16:"Python: Matplotlib / Seaborn / Plotly",TTF17:"PySpark / Apache Spark",TTF18:"n8n / Zapier",TTF20:"SHAP (Explainable AI)",TTF22:"GenAI Tools (ChatGPT / Copilot / Gemini)",TTF23:"R + RStudio",TTF24:"PuLP / scipy.optimize (Python Optimisation)",TTF25:"jamovi (R-based GUI Statistics)",TTF26:"SmartPLS (PLS-SEM)",TTF45:"Tableau Public"};
 
 const prereqs = {
   BANA:{M:["SMDM","DTAI"],R:[]},
@@ -876,7 +900,9 @@ const prereqs = {
   ABDA:{M:["AAML"],R:[]},
   DSTR:{M:[],R:["APRD","VAAS"]},
   GESB:{M:["AAML"],R:[]},
-  TGRC:{M:[],R:["CISB"]}
+  TGRC:{M:[],R:["CISB"]},
+  PRBA:{M:["AAML"],R:[]},
+  AMVA:{M:[],R:["SIAM","BANA"]}
 };
 
 const roleCategories = [
@@ -900,24 +926,24 @@ const roleCompetencies = {BC_ANALYTICS:["Problem structuring","Hypothesis-driven
 
 const roleTTFs = {BC_ANALYTICS:["TTF07","TTF03","TTF02"],DIG_PROD_ANALYTICS:["TTF22","TTF03"],ADV_ANALYTICS:["TTF23","TTF01","TTF07"],TECH_STRAT_CONS:["TTF06","TTF12","TTF09"],RISK_CYBER_GOV:["TTF13","TTF12","TTF14"],SC_OPS_ANALYTICS:["TTF07","TTF08"],MKTG_ANALYTICS:["TTF01","TTF03","TTF22"],FIN_ANALYTICS:["TTF07","TTF08","TTF23"],HR_ANALYTICS:["TTF03","TTF45","TTF01"],EM_AI_PROD_MGR:["TTF22","TTF06"],EM_DEC_SCIENTIST:["TTF01","TTF23","TTF07"],EM_AI_CONSULTANT:["TTF22","TTF11","TTF12"],EM_DATA_GOV_CDO:["TTF12","TTF13"],EM_AI_BPO:["TTF15","TTF06"]};
 
-const roleCourses = {BC_ANALYTICS:{M:["BANA","DMBI","DPMG","APRD","GESB","DSTR"],R:[]},DIG_PROD_ANALYTICS:{M:["BANA","DMBI","DPMG","AAML","VAAS","GESB"],R:[]},ADV_ANALYTICS:{M:["BANA","BUFO","DMBI","AAML","DSTR","ABDA"],R:[]},TECH_STRAT_CONS:{M:["DMBI","DPMG","CISB","APRD","DSTR"],R:[]},RISK_CYBER_GOV:{M:["DMBI","DPMG","CISB","DSTR","TGRC"],R:[]},SC_OPS_ANALYTICS:{M:["BANA","BUFO","DMBI","DPMG","DPIN","VAAS"],R:[]},MKTG_ANALYTICS:{M:["BANA","DMBI","DPMG","AAML","VAAS","GESB"],R:[]},FIN_ANALYTICS:{M:["BANA","BUFO","DMBI","DPMG","AAML","SIAM","VAAS"],R:[]},HR_ANALYTICS:{M:["BANA","DMBI","DPMG","VAAS"],R:[]},EM_AI_PROD_MGR:{M:["BANA","DMBI","DPMG","AAML","APRD","GESB"],R:[]},EM_DEC_SCIENTIST:{M:["BANA","DMBI","DPMG","AAML","SIAM","GESB"],R:[]},EM_AI_CONSULTANT:{M:["BANA","DMBI","DPMG","AAML","GESB","DSTR"],R:[]},EM_DATA_GOV_CDO:{M:["BUFO","DMBI","DPMG","DSTR","TGRC"],R:[]},EM_AI_BPO:{M:["BANA","DMBI","AAML","DPIN","VAAS"],R:[]}};
+const roleCourses = {BC_ANALYTICS:{M:["BANA","DMBI","DPMG","APRD","GESB","DSTR","PRBA"],R:[]},DIG_PROD_ANALYTICS:{M:["BANA","DMBI","DPMG","AAML","VAAS","GESB"],R:[]},ADV_ANALYTICS:{M:["BANA","BUFO","DMBI","AAML","DSTR","ABDA","PRBA","AMVA"],R:[]},TECH_STRAT_CONS:{M:["DMBI","DPMG","CISB","APRD","DSTR"],R:[]},RISK_CYBER_GOV:{M:["DMBI","DPMG","CISB","DSTR","TGRC"],R:[]},SC_OPS_ANALYTICS:{M:["BANA","BUFO","DMBI","DPMG","DPIN","VAAS","PRBA"],R:[]},MKTG_ANALYTICS:{M:["BANA","DMBI","DPMG","AAML","VAAS","GESB","AMVA"],R:[]},FIN_ANALYTICS:{M:["BANA","BUFO","DMBI","DPMG","AAML","SIAM","VAAS","PRBA"],R:[]},HR_ANALYTICS:{M:["BANA","DMBI","DPMG","VAAS","AMVA"],R:[]},EM_AI_PROD_MGR:{M:["BANA","DMBI","DPMG","AAML","APRD","GESB"],R:[]},EM_DEC_SCIENTIST:{M:["BANA","DMBI","DPMG","AAML","SIAM","GESB","PRBA","AMVA"],R:[]},EM_AI_CONSULTANT:{M:["BANA","DMBI","DPMG","AAML","GESB","DSTR"],R:[]},EM_DATA_GOV_CDO:{M:["BUFO","DMBI","DPMG","DSTR","TGRC"],R:[]},EM_AI_BPO:{M:["BANA","DMBI","AAML","DPIN","VAAS"],R:[]}};
 
-// vals order: BANA, BUFO, DMBI, DPMG, AAML, SIAM, CISB, APRD, DPIN, VAAS, GESB, DSTR, TGRC, ABDA
+// vals order: BANA, BUFO, DMBI, DPMG, AAML, SIAM, CISB, APRD, DPIN, VAAS, GESB, DSTR, TGRC, ABDA, PRBA, AMVA
 const pathwayData = [
-  {type:"Primary",name:"Business & Consulting Analytics",vals:["M","","M","M","","","","M","","","M","M","",""]},
-  {type:"Primary",name:"Digital & Product Analytics",vals:["M","","M","M","M","","","","","M","M","","",""]},
-  {type:"Primary",name:"Analytical Depth",vals:["M","M","M","","M","","","","","","","M","","M"]},
-  {type:"Primary",name:"Technology Consulting & Strategy",vals:["","","M","M","","","M","M","","","","M","",""]},
-  {type:"Primary",name:"Risk, Cyber & Governance Analytics",vals:["","","M","M","","","M","","","","","M","M",""]},
-  {type:"Dual",name:"Supply Chain & Operations Analytics",vals:["M","M","M","M","","","","","M","M","","","",""]},
-  {type:"Dual",name:"Marketing Analytics",vals:["M","","M","M","M","","","","","M","M","","",""]},
-  {type:"Dual",name:"Financial Analytics",vals:["M","M","M","M","M","M","","","","M","","","",""]},
-  {type:"Dual",name:"HR Analytics",vals:["M","","M","M","","","","","","M","","","",""]},
-  {type:"Emerging",name:"AI Product Management",vals:["M","","M","M","M","","","M","","","M","","",""]},
-  {type:"Emerging",name:"Decision Science",vals:["M","","M","M","M","M","","","","","M","","",""]},
-  {type:"Emerging",name:"AI & GenAI Consulting",vals:["M","","M","M","M","","","","","","M","M","",""]},
-  {type:"Emerging",name:"Data Governance & CDO",vals:["","M","M","M","","","","","","","","M","M",""]},
-  {type:"Emerging",name:"AI-Driven Process Intelligence",vals:["M","","M","","M","","","","M","M","","","",""]}
+  {type:"Primary",name:"Business & Consulting Analytics",vals:["M","","M","M","","","","M","","","M","M","","","M",""]},
+  {type:"Primary",name:"Digital & Product Analytics",vals:["M","","M","M","M","","","","","M","M","","","","",""]},
+  {type:"Primary",name:"Analytical Depth",vals:["M","M","M","","M","","","","","","","M","","M","M","M"]},
+  {type:"Primary",name:"Technology Consulting & Strategy",vals:["","","M","M","","","M","M","","","","M","","","",""]},
+  {type:"Primary",name:"Risk, Cyber & Governance Analytics",vals:["","","M","M","","","M","","","","","M","M","","",""]},
+  {type:"Dual",name:"Supply Chain & Operations Analytics",vals:["M","M","M","M","","","","","M","M","","","","","M",""]},
+  {type:"Dual",name:"Marketing Analytics",vals:["M","","M","M","M","","","","","M","M","","","","","M"]},
+  {type:"Dual",name:"Financial Analytics",vals:["M","M","M","M","M","M","","","","M","","","","","M",""]},
+  {type:"Dual",name:"HR Analytics",vals:["M","","M","M","","","","","","M","","","","","","M"]},
+  {type:"Emerging",name:"AI Product Management",vals:["M","","M","M","M","","","M","","","M","","","","",""]},
+  {type:"Emerging",name:"Decision Science",vals:["M","","M","M","M","M","","","","","M","","","","M","M"]},
+  {type:"Emerging",name:"AI & GenAI Consulting",vals:["M","","M","M","M","","","","","","M","M","","","",""]},
+  {type:"Emerging",name:"Data Governance & CDO",vals:["","M","M","M","","","","","","","","M","M","","",""]},
+  {type:"Emerging",name:"AI-Driven Process Intelligence",vals:["M","","M","","M","","","","M","M","","","","","",""]}
 ];
 
 function termClass(t){return {T1:"y1",T3:"y1",T4:"t4",T5:"t5",T6:"t6"}[t];}
@@ -997,7 +1023,7 @@ function renderPathway(){
   pathwayData.forEach(row=>{
     if(row.type!==lastType){
       const tr=document.createElement("tr"); tr.className="group-row";
-      tr.innerHTML=`<td colspan="16">${row.type} Tracks</td>`; tbody.appendChild(tr); lastType=row.type;
+      tr.innerHTML=`<td colspan="18">${row.type} Tracks</td>`; tbody.appendChild(tr); lastType=row.type;
     }
     const tr=document.createElement("tr");
     const cells=row.vals.map(v=>{
